@@ -2,19 +2,17 @@ package com.project.autoServiceApp.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
 @RequiredArgsConstructor
 public class Car {
+
     @Id
-    @GeneratedValue
-    private String vin;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
     @Column(name = "Valstybinis numeris")
     private String licencePlate;
     @Column(name = "Markė")
