@@ -20,11 +20,6 @@ public class CarController {
         this.carService = carService;
     }
 
-    @GetMapping("/hello")
-    public String hello(){
-        return "Hello";
-    }
-
     @GetMapping("/allCars")
     public List<Car> showAllCars(){
         return carService.getAllCars();
