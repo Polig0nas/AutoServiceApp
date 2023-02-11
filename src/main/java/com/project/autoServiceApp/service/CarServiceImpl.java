@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -17,5 +18,11 @@ public class CarServiceImpl implements CarService{
     @Override
     public List<Car> getAllCars() {
         return repository.findAll();
+    }
+
+
+    @Override
+    public Optional<Car> getCarById(Long id) {
+        return repository.findById(id);
     }
 }

@@ -1,12 +1,12 @@
 
-insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('1N6AF0', 'Chevrolet', 'Aveo', 2004,    'sedan', 'diesel');
-insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('JN8AS5', 'Acura', 'TL', 2009,          'sedan', 'petrol');
-insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('KMHDB8', 'Dodge', 'Avenger', 1999,     'sedan', 'petrol');
+insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('1N6AF0', 'Chevrolet', 'Aveo', 2004,                   'sedan', 'diesel');
+insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('JN8AS5', 'Acura', 'TL', 2009,                             'sedan', 'petrol');
+insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('KMHDB8', 'Dodge', 'Avenger', 1999,                        'sedan', 'petrol');
 insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('5LMJJ3', 'Acura', 'CL', 1998,                          'sedan', 'petrol');
 insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('WDDGF4', 'Mitsubishi', 'Montero', 2006,                'sedan', 'petrol');
 insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('1N6AD0', 'Mitsubishi', 'Eclipse', 1996,                'wagon', 'petrol');
-insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('1G6AK5', 'Ford', 'F250', 2000, 'wagon', 'diesel');
-insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('4T1BF1', 'Acura', 'TSX', 2005, 'sedan', 'diesel');
+insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('1G6AK5', 'Ford', 'F250', 2000,                            'wagon', 'diesel');
+insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('4T1BF1', 'Acura', 'TSX', 2005,                            'sedan', 'diesel');
 insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('3GYFNE', 'Buick', 'Park Avenue', 1994,                 'sedan', 'petrol');
 insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('WBAGN6', 'Cadillac', 'Escalade ESV', 2011,             'sedan', 'diesel');
 insert into Car (LICENCE_PLATE, MAKE, MODEL, YEAR_OF_MADE, BODY_TYPE, FUEL_TYPE) values ('1FTMF1', 'BMW', '530', 2007,                           'sedan', 'diesel');
