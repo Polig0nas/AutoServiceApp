@@ -1,29 +1,33 @@
 package com.project.autoServiceApp.model;
 
 import lombok.*;
+import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import java.util.Objects;
 
-@Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@RequiredArgsConstructor
+@ToString
+@Entity(name = "Car")
 public class Car {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
-    @Column(name = "Valstybinis numeris")
+    private long id;
+
     private String licencePlate;
-    @Column(name = "Markė")
+
     private String make;
-    @Column(name = "Modelis")
+
     private String model;
-    @Column(name = "Metai")
+
     private String yearOfMade;
-    @Column(name = "Kėbulo tipas")
+
     private String bodyType;
-    @Column(name = "Kuro tipas")
+
     private String fuelType;
 
 }
