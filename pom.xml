@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.project</groupId>
-	<artifactId>autoServiceApp</artifactId>
+	<artifactId>autoServiceApp-back</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>autoServiceApp</name>
 	<description>Auto Service App for CodeAcademy</description>
