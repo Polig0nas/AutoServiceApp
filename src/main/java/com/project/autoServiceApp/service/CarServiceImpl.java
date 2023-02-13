@@ -14,15 +14,29 @@ import java.util.Optional;
 @Slf4j
 public class CarServiceImpl implements CarService{
     private final CarRepository repository;
-
     @Override
     public List<Car> getAllCars() {
         return repository.findAll();
     }
-
-
     @Override
     public Optional<Car> getCarById(Long id) {
         return repository.findById(id);
+    }
+
+    @Override
+    public void removeCar(Long id) {
+        repository.deleteById(id);
+    }
+
+    public Car createNewCar(String licencePlate, String make, String model, String yearOfMade, String bodyType, String fuelType){
+        Car car = new Car();
+        car.setLicencePlate(licencePlate);
+        car.setMake(make);
+        car.setModel(model);
+        car.setYearOfMade(yearOfMade);
+        car.setBodyType(bodyType);
+        car.setFuelType(fuelType);
+        repository.save(car);
+        return car;
     }
 }
