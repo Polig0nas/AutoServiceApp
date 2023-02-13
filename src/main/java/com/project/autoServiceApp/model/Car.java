@@ -1,16 +1,10 @@
 package com.project.autoServiceApp.model;
 
 import lombok.*;
-import org.hibernate.Hibernate;
-
 import javax.persistence.*;
-import java.util.Objects;
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 @Entity(name = "Car")
 public class Car {
     @Id
