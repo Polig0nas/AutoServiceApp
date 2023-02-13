@@ -3,16 +3,12 @@ package com.project.autoServiceApp.controllers;
 import com.project.autoServiceApp.model.Car;
 import com.project.autoServiceApp.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(value = "/cars")
 public class CarController {
     private final CarService carService;
     @Autowired
@@ -20,12 +16,20 @@ public class CarController {
         this.carService = carService;
     }
 
-    @GetMapping("/allCars")
+    @GetMapping("/showall")
     public List<Car> showAllCars(){
         return carService.getAllCars();
     }
-    @GetMapping("/{id}")
+    @GetMapping("show/{id}")
     public Optional<Car> showCar(@PathVariable Long id){
         return carService.getCarById(id);
     }
+    @PostMapping("remove/{id}")
+    public void removeCar(@PathVariable Long id){
+        carService.removeCar(id);
+    }
+    public Car newCar(String licencePlate, String make, String model, String yearOfMade, String bodyType, String fuelType){
+        return null;
+    }
+
 }
