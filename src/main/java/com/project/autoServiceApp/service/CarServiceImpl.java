@@ -28,7 +28,7 @@ public class CarServiceImpl implements CarService{
         repository.deleteById(id);
     }
 
-    public Car createNewCar(String licencePlate, String make, String model, String yearOfMade, String bodyType, String fuelType){
+    public void createNewCar(String licencePlate, String make, String model, String yearOfMade, String bodyType, String fuelType){
         Car car = new Car();
         car.setLicencePlate(licencePlate);
         car.setMake(make);
@@ -37,6 +37,5 @@ public class CarServiceImpl implements CarService{
         car.setBodyType(bodyType);
         car.setFuelType(fuelType);
         repository.save(car);
-        return car;
     }
 }

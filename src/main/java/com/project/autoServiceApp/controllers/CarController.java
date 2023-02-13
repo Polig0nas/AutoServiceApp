@@ -28,8 +28,9 @@ public class CarController {
     public void removeCar(@PathVariable Long id){
         carService.removeCar(id);
     }
-    public Car newCar(String licencePlate, String make, String model, String yearOfMade, String bodyType, String fuelType){
-        return null;
+    @PostMapping("/new")
+    public void newCar(@RequestBody Car car){
+//        carService.createNewCar();
     }
 
 }
