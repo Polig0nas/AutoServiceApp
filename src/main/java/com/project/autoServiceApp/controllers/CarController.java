@@ -30,7 +30,7 @@ public class CarController {
     }
     @PostMapping("/new")
     public void newCar(@RequestBody Car car){
-//        carService.createNewCar();
+        carService.createNewCar(car);
     }
 
 }

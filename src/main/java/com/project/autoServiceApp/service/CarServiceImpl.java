@@ -28,14 +28,14 @@ public class CarServiceImpl implements CarService{
         repository.deleteById(id);
     }
 
-    public void createNewCar(String licencePlate, String make, String model, String yearOfMade, String bodyType, String fuelType){
-        Car car = new Car();
-        car.setLicencePlate(licencePlate);
-        car.setMake(make);
-        car.setModel(model);
-        car.setYearOfMade(yearOfMade);
-        car.setBodyType(bodyType);
-        car.setFuelType(fuelType);
-        repository.save(car);
+    public void createNewCar(Car car){
+        Car newCar = new Car();
+        newCar.setLicencePlate(car.getLicencePlate());
+        newCar.setMake(car.getMake());
+        newCar.setModel(car.getModel());
+        newCar.setYearOfMade(car.getYearOfMade());
+        newCar.setBodyType(car.getBodyType());
+        newCar.setFuelType(car.getFuelType());
+        repository.save(newCar);
     }
 }
