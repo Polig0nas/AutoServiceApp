@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
 @AllArgsConstructor
@@ -20,6 +21,7 @@ public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotNull(message = "{licensePlate.notNull}")
     private String licencePlate;
     private String make;
     private String model;
