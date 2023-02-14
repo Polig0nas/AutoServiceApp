@@ -2,7 +2,6 @@ package com.project.autoServiceApp.service;
 
 import com.project.autoServiceApp.model.Car;
 import com.project.autoServiceApp.repository.CarRepository;
-import com.sun.istack.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -28,8 +27,7 @@ public class CarServiceImpl implements CarService{
     public void removeCar(Long id) {
         repository.deleteById(id);
     }
-    @NotNull
-    @Override
+
     public void createNewCar(Car car){
         Car newCar = new Car();
         newCar.setLicencePlate(car.getLicencePlate());
