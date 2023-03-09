@@ -5,7 +5,7 @@ import org.hibernate.Hibernate;
 
 import javax.persistence.*;
 import java.util.Objects;
-
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

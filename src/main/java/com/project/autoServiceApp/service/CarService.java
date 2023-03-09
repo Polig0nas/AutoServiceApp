@@ -1,15 +1,15 @@
 package com.project.autoServiceApp.service;
 
-import com.project.autoServiceApp.model.Car;
+import com.project.autoServiceApp.model.CarDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public interface CarService {
-    List<Car> getAllCars();
-    Optional<Car> getCarById(Long id);
-    void removeCar(Long id);
-    void createNewCar(Car car);
+    List<CarDto> getAllCars();
+
+//    Optional<Car> getCarById(Long id);
+//    void removeCar(Long id);
+    String createNewCar(CarDto carDto);
 }
