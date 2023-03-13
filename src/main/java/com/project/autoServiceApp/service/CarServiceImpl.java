@@ -18,7 +18,7 @@ public class CarServiceImpl implements CarService{
     private final CarRepository repository;
     @Override
     public List<CarDto> getAllCars() {
-        return null;
+        return mapCarDto(repository.getAllCars());
     }
 
     @Override
