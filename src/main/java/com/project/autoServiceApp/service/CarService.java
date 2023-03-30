@@ -8,8 +8,5 @@ import java.util.List;
 @Service
 public interface CarService {
     List<CarDto> getAllCars();
-
-//    Optional<Car> getCarById(Long id);
-//    void removeCar(Long id);
     String createNewCar(CarDto carDto);
 }

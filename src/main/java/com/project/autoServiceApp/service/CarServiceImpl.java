@@ -53,14 +53,4 @@ public class CarServiceImpl implements CarService{
                 .collect(Collectors.toList());
     }
 
-//    public void createNewCar(Car car){
-//        Car newCar = new Car();
-//        newCar.setLicencePlate(car.getLicencePlate());
-//        newCar.setMake(car.getMake());
-//        newCar.setModel(car.getModel());
-//        newCar.setYearOfMade(car.getYearOfMade());
-//        newCar.setBodyType(car.getBodyType());
-//        newCar.setFuelType(car.getFuelType());
-//        repository.save(newCar);
-//    }
 }
