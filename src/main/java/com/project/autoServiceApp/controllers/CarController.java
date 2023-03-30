@@ -1,5 +1,4 @@
 package com.project.autoServiceApp.controllers;
-
 import com.project.autoServiceApp.model.CarDto;
 import com.project.autoServiceApp.service.CarService;
 import io.swagger.annotations.Api;
@@ -41,20 +40,4 @@ public class CarController {
                 .build();
         return carService.createNewCar(carDto);
     }
-
-
-//    @GetMapping("car/{id}")
-//    public Optional<Car> showCar(@PathVariable Long id){
-//        return carService.getCarById(id);
-//    }
-
-//    @PostMapping("remove/{id}")
-//    public void removeCar(@PathVariable Long id){
-//        carService.removeCar(id);
-//    }
-//    @PostMapping("/new")
-//    public void newCar(@RequestBody Car car){
-//        carService.createNewCar(car);
-//    }
-
 }
